@@ -1,0 +1,118 @@
+$buzz-gradient-theme: linear-gradient(180deg, #CDFCB0 0%, #77EF7B 26.04%, #3B0581 65.10%);
+$buzz-btn: #CDFCB0;
+$buzz-btn-icon: #3B0581;
+$buzz-btn-desc: #FFF;
+$buzz-event-info : #FFF;
+
+
+body {
+    background: $buzz-gradient-theme;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8px;
+
+    li.inputRow {
+        margin-top: 8px;
+    }
+}
+
+
+
+
+.event-day, .event-month, .event-hour, .event-hr, .event-hour-desc{
+    color: $buzz-event-info;
+    text-align: center;
+}   
+
+.event-hr {
+    width: 120px;
+    border: 3px solid $buzz-event-info;
+    margin: 0 auto;
+}
+
+.event-main-information {
+    margin: 36px 0;
+    font-size: 5em;
+}
+
+.event-title {
+    color: $buzz-btn-icon;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-day {
+    margin-top: 36px;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+.event-hour {
+    margin-top: 24px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.event-month {
+    margin-bottom: 24px;
+}
+
+.event-hour-desc {
+    margin-bottom: 72px;
+}
+
+
+.event-btn-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* BOTÕES DE AÇÃO */
+
+.btnAction {
+    background-color: $buzz-btn;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    border: 0;
+}
+
+.btnAction svg {
+    width: 50px;
+    height: 50px;
+    
+    .svg-path {
+        stroke: $buzz-btn-icon;
+    }
+}
+
+.btnActionDesc {
+    color: $buzz-btn-desc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 16px;
+    text-align: center;
+
+}
+
+.copyright {
+    color: $buzz-btn-desc;
+    text-align: center;
+    font-size: .8em;
+    padding: 0;
+    margin-top: 16px;
+}

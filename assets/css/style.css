@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CDFCB0), color-stop(26.04%, #77EF7B), color-stop(65.1%, #3B0581));
+  background: linear-gradient(180deg, #CDFCB0 0%, #77EF7B 26.04%, #3B0581 65.1%);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+ul li.inputRow {
+  margin-top: 8px;
+}
+
+.event-day, .event-month, .event-hour, .event-hr, .event-hour-desc {
+  color: #FFF;
+  text-align: center;
+}
+
+.event-hr {
+  width: 120px;
+  border: 3px solid #FFF;
+  margin: 0 auto;
+}
+
+.event-main-information {
+  margin: 36px 0;
+  font-size: 5em;
+}
+
+.event-title {
+  color: #3B0581;
+  font-weight: bold;
+  text-align: center;
+}
+
+.event-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.event-day {
+  margin-top: 36px;
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.event-hour {
+  margin-top: 24px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.event-month {
+  margin-bottom: 24px;
+}
+
+.event-hour-desc {
+  margin-bottom: 72px;
+}
+
+.event-btn-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* BOTÕES DE AÇÃO */
+.btnAction {
+  background-color: #CDFCB0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  border: 0;
+}
+
+.btnAction svg {
+  width: 50px;
+  height: 50px;
+}
+
+.btnAction svg .svg-path {
+  stroke: #3B0581;
+}
+
+.btnActionDesc {
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.copyright {
+  color: #FFF;
+  text-align: center;
+  font-size: .8em;
+  padding: 0;
+  margin-top: 16px;
+}
+/*# sourceMappingURL=style.css.map */
