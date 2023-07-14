@@ -82,12 +82,17 @@ form.addEventListener('submit', function(ev){
 
     const fullnameInput = document.getElementById('fullname');
     const phoneInput = document.getElementById('phone');
+    const inputRows = document.querySelectorAll('.inputRow');
 
     let escorts = [];
 
     inputRows.forEach(function(row){
-        const escortType = document.querySelector('#' + row.id + ' input[name="escortType"]').value;
-        const escortAmount = document.querySelector('#' + row.id + ' input[name="escortAmount"]').value;
+        const selectElement = document.querySelector('#' + row.id + ' select');
+        const selectedIndex = selectElement.selectedIndex;
+        const selectedOption = selectElement.options[selectedIndex];
+        const escortType = selectedOption.value;
+        
+        const escortAmount = document.querySelector('#' + row.id + ' input[type="number"]').value;
         escorts.push({
             type: escortType,
             amount: escortAmount
@@ -100,7 +105,23 @@ form.addEventListener('submit', function(ev){
         escorts: escorts
     }
 
-    presence.push(newPresence);
+    // Converter o objeto presence em uma string JSON
+    const confirmPresence = JSON.stringify(newPresence);
+
+    // Criar um elemento de input oculto para enviar a string JSON
+    const presence = document.createElement('input');
+    presence.type = 'hidden';
+    presence.name = 'confirmPresence';
+    presence.value = confirmPresence;
+
+    // Adicionar o input oculto ao formulário
+    form.appendChild(presence);
+
+    // Envia o formulário
+    form.submit();
+
+
+    // presence.push(newPresence);
     alert('Presença confirmada com sucesso!');
 
     // Limpar os formulários
@@ -110,5 +131,5 @@ form.addEventListener('submit', function(ev){
         row.remove();
     });
 
-    console.log(presence);
+    // console.log(presence);
 });

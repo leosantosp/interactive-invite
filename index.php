@@ -86,7 +86,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form id="confirmPresenceForm">
+        <form id="confirmPresenceForm" action="process/confirm.php">
             <div class="form-group">
                 <label for="fullname">Nome Completo</label>
                 <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Ex: Fulano de Tal">
