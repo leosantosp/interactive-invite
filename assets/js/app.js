@@ -105,6 +105,7 @@ form.addEventListener('submit', function(ev){
         escorts: escorts
     }
 
+
     // Converter o objeto presence em uma string JSON
     const confirmPresence = JSON.stringify(newPresence);
 
@@ -120,8 +121,8 @@ form.addEventListener('submit', function(ev){
     // Envia o formulário
     form.submit();
 
-
-    // presence.push(newPresence);
+/*
+    presence.push(newPresence); */
     alert('Presença confirmada com sucesso!');
 
     // Limpar os formulários
@@ -131,5 +132,5 @@ form.addEventListener('submit', function(ev){
         row.remove();
     });
 
-    // console.log(presence);
+    console.log(presence);
 });
